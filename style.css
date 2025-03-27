@@ -445,7 +445,7 @@ select:focus
     padding: 10px;
     margin-top: 20px;
     background-color: whitesmoke;
-    color: #d51717;
+    color: #e90000;
 }
 
 .single-product input
@@ -465,6 +465,24 @@ input:focus
     outline: none;
 }
 
+.single-product .bi
+{
+    color: #913326;
+    margin-left: 10px;
+}
+
+.small-img-row
+{
+    display: flex;
+    justify-content: space-between
+}
+
+.small-img-col
+{
+    flex-basis: 25%;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 600px)
 {
     .row
@@ -476,6 +494,23 @@ input:focus
     {
         flex-basis: 100%;
     }
+
+    .single-product .row
+    {
+        text-align: left;
+    }
+
+    .single-product .col-2
+    {
+        padding: 20px 0;
+    }
+
+    .single-product h1
+    {
+        font-size: 26px;
+        line-height: 22px;
+    }
+
 }
 /* ---------- Estilos Específicos da Página Sobre ---------- */
 .small-container .row {

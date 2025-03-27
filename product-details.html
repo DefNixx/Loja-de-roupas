@@ -34,7 +34,24 @@
         <div class="small-container single-product">
             <div class="row">
                 <div class="col-2">
-                    <img src="images/camiseta dark funeral.jpeg" alt="" width="100%">
+                    <img src="images/camiseta dark funeral.jpeg" alt="" width="100%" id="ProductImg">
+
+                  <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/camiseta dark funeral.jpeg" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/camiseta dark funeral 2.jpeg" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/camiseta dark funeral 3.jpeg" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/camiseta dark funeral 4.png" alt="" width="100%" class="small-img">
+                    </div>
+                  </div>
+                
+                
                 </div>
                 <div class="col-2">
                     <p>Início / Camiseta</p>
@@ -52,12 +69,21 @@
                     <input type="number" value="1">
                     <a href="" class="btn">Adicionar ao carrinho</a>
                     <h3>Detalhes do produto <i class = "bi bi-indent"></i></h3>
+                    <br>
                     <p>Camiseta black metal banda dark funeral cor preta</p>
                 </div>
             </div>
         </div>
+<!-------------titulo------------->
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Produtos Relacionados</h2>
+                <p>ver mais</p>
+            </div>
+        </div>
 
 
+<!-------------produtos----------->
         <div class="small-container">
 
             <div class="row">
@@ -219,6 +245,29 @@
                 MenuItems.style.maxHeight = "0px"
             }
         }
+    </script>
+
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function()
+        {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function()
+        {
+            ProductImg.src = SmallImg[3].src;
+        }
+
     </script>
 </body>
 </html>
