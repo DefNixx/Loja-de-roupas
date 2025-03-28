@@ -483,6 +483,84 @@ input:focus
     cursor: pointer;
 }
 
+    
+/*itens do carrinho ----*/
+
+.cart-page
+{
+    margin: 80px auto;
+}
+
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th
+{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: #913326;
+}
+
+td
+{
+    padding: 10px 5px;
+    color: white;
+}
+
+td input
+{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    color: rgb(246, 246, 246);
+}
+
+td a
+{
+    color: rgb(197, 24, 24);
+    font-size: 12px;
+}
+
+td img
+{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.total-price
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table
+{
+    border-top: 3px solid #913326;
+    width: 100%;
+    max-width: 400px;
+}
+
+td:last-child
+{
+    text-align: right;
+}
+
+th:last-child
+{
+    text-align: right;
+}
+
 @media only screen and (max-width: 600px)
 {
     .row
@@ -509,6 +587,11 @@ input:focus
     {
         font-size: 26px;
         line-height: 22px;
+    }
+
+    .cart-info p
+    {
+        display: none;
     }
 
 }
